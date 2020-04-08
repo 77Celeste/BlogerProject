@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/css/App.css';
+//import './assets/css/Menu.css';
+//import './assets/css/List.css'
+//importat componentes
+import Menu from './components/Menu';
+import List from './components/List';
+//import MiComponente from './components/MiComponente'
+
+/*function Hola(name,edad) {
+  var mostrar= (
+  <div>
+    <h2>soy {name}</h2>
+    <h3>tengo {edad} anio</h3>
+  </div>
+  );
+  return mostrar;
+}*/
 
 function App() {
+  //var name="isa bel";
+  //var edad=15+5;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Menu title="proyecto"/>
+      <List/>
     </div>
   );
 }
